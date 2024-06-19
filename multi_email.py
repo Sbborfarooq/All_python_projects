@@ -3,7 +3,7 @@ import smtplib as s
 ob=s.SMTP("smtp.gmail.com",587)
 ob.ehlo()#server function 
 ob.starttls()#server funtion to conect with server 
-ob.login("sbborfarooq@gmail.com","robbas@12345")
+ob.login("sbborfarooq@gmail.com","ywfh pbjg yilm osgg")
 #now creating the subject and body of email 
 subject="test python "
 body="hi how are you ?"
