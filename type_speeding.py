@@ -21,18 +21,29 @@ def speed_time(time_s,time_e,userinput):
     speed=len(userinput)/time_r
     return round(speed)
 
+if __name__=='__main__':
+    while True:
+        ck=input("Are you ready for speed_typing:yes/No: ")
+        if ck=="yes":
+             #now we will create the variable test 
+            test=["she sell sea shells on the sea shore","my name is sabbor farooq","iam python developer"]
+            test1=r.choice(test)
+            print("***** typing speed *****")
+            print(test1)
+            #till here our random module is properly working 
+
+            time1=time()
+            testinput=input("Enter :")
+            time2=time()
+
+            print('speed : ',speed_time(time1,time2,testinput),"w/sec")
+            print("Error :" ,mistake(test1,testinput)                     )
+        elif ck=="No":
+            print("Thank You")
+            break
+        else:
+            print("wrong Input:")
+        
 
 
-#now we will create the variable test 
-test=["she sell sea shells on the sea shore","my name is sabbor farooq","iam python developer"]
-test1=r.choice(test)
-print("***** typing speed *****")
-print(test1)
-#till here our random module is properly working 
 
-time1=time()
-testinput=input("Enter :")
-time2=time()
-
-print('speed : ',speed_time(time1,time2,testinput),"w/sec")
-print("Error :" ,mistake(test1,testinput)                     )
